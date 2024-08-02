@@ -1,13 +1,33 @@
 # Takamul_Automation_Project
-to install playwright: npx playwright install
-install request: npm install request -g
-run test: npx playwright test contacts.spec.js 
-generate report: 
-1- npm i -D allure-commandline
-2- npm i -D experimental-allure-playwright
-after run: 
-3- npx allure generate ./allure-results --clean
-4- npx allure open ./allure-report
-********************************************
-if running on local machine, in terminal type: $local_run='true'
+
+## Installation
+
+### To install Playwright:  
+npx playwright install
+
+### To install request:  
+npm install request -g
+
+## Running Tests
+
+### To run the test:  
+npx playwright test contacts.spec.js
+
+## Generating Report
+### TO install Allure Commandline:  
+npm i -D allure-commandline
+
+### To install Experimental Allure Playwright:  
+npm i -D experimental-allure-playwright
+
+### After running tests, generate the report:  
+npx allure generate ./allure-results --clean
+
+### Open the generated report:  
+npx allure open ./allure-report
+
+### If running on a local machine, in terminal type:  
+$local_run='true'
 npm run test
+
+
